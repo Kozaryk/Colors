@@ -25,6 +25,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Trb-u8-Ymp"/>
                                 </constraints>
+                                <color key="minimumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="redSliderChangeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="bTd-7i-NHU"/>
                                 </connections>
@@ -34,6 +35,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="EKg-7U-oB9"/>
                                 </constraints>
+                                <color key="minimumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="greenSliderChangeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="4bo-YH-Pvo"/>
                                 </connections>
@@ -43,20 +45,23 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Fec-YJ-E3h"/>
                                 </constraints>
+                                <color key="minimumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="blueSliderChangeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="LHx-YG-96d"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" minimumValueImage="circle" catalog="system" maximumValueImage="circle.fill" translatesAutoresizingMaskIntoConstraints="NO" id="pw7-wS-2gV">
-                                <rect key="frame" x="57" y="489" width="300" height="31"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" minimumValueImage="cube" catalog="system" maximumValueImage="cube.fill" translatesAutoresizingMaskIntoConstraints="NO" id="pw7-wS-2gV">
+                                <rect key="frame" x="28" y="489" width="318" height="31"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0Xi-1S-QaJ"/>
                                 </constraints>
+                                <color key="minimumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="transparencyChangeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="CfZ-0d-iRf"/>
                                 </connections>
                             </slider>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Red" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YOW-mp-S4o">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Red" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YOW-mp-S4o">
                                 <rect key="frame" x="30" y="364" width="60" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -66,7 +71,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Green" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ok7-CD-rIK">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Green" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ok7-CD-rIK">
                                 <rect key="frame" x="30" y="401" width="60" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -76,7 +81,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Blue" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c54-Ls-Px0">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Blue" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c54-Ls-Px0">
                                 <rect key="frame" x="30" y="438" width="60" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -88,7 +93,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zge-G3-Usc">
                                 <rect key="frame" x="98" y="364" width="60" height="34"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="i0P-CR-4CC"/>
                                     <constraint firstAttribute="width" constant="60" id="xod-2z-JF9"/>
@@ -98,7 +103,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mX3-fo-Bpg">
                                 <rect key="frame" x="98" y="401" width="60" height="34"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="Kbf-VH-3xW"/>
                                     <constraint firstAttribute="width" constant="60" id="azv-4d-dgu"/>
@@ -108,7 +113,7 @@
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rDZ-io-cxC">
                                 <rect key="frame" x="98" y="438" width="60" height="34"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="41F-kN-ba0"/>
                                     <constraint firstAttribute="height" constant="34" id="Dhl-Vs-fY9"/>
@@ -116,23 +121,33 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQ0-cx-gyf">
+                                <rect key="frame" x="352" y="488" width="42" height="32"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="resetColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="buZ-Q6-ZO6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.56470588239999997" green="0.2156862745" blue="0.28627450980000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="2su-Nk-qpJ" firstAttribute="top" secondItem="0PL-4A-PrM" secondAttribute="bottom" constant="7" id="0dn-a4-Z0v"/>
                             <constraint firstItem="zge-G3-Usc" firstAttribute="top" secondItem="Szs-2G-dPg" secondAttribute="bottom" constant="31" id="1R2-T1-dJi"/>
                             <constraint firstItem="0PL-4A-PrM" firstAttribute="top" secondItem="cNl-JU-UZU" secondAttribute="bottom" constant="7" id="4mO-iN-N46"/>
                             <constraint firstItem="cNl-JU-UZU" firstAttribute="top" secondItem="Szs-2G-dPg" secondAttribute="bottom" constant="34" id="561-MS-Wpc"/>
                             <constraint firstItem="ok7-CD-rIK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="8l4-tz-dSE"/>
+                            <constraint firstItem="qQ0-cx-gyf" firstAttribute="leading" secondItem="pw7-wS-2gV" secondAttribute="trailing" constant="8" symbolic="YES" id="8to-fO-seS"/>
                             <constraint firstItem="Szs-2G-dPg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Aeg-a3-Oqc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cNl-JU-UZU" secondAttribute="trailing" constant="20" id="DMW-m1-Gb5"/>
                             <constraint firstItem="c54-Ls-Px0" firstAttribute="top" secondItem="ok7-CD-rIK" secondAttribute="bottom" constant="3" id="DsT-eA-yJj"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2su-Nk-qpJ" secondAttribute="trailing" constant="20" id="Gt9-os-oc8"/>
                             <constraint firstItem="pw7-wS-2gV" firstAttribute="top" secondItem="2su-Nk-qpJ" secondAttribute="bottom" constant="18" id="IFf-jt-2H3"/>
                             <constraint firstItem="rDZ-io-cxC" firstAttribute="leading" secondItem="c54-Ls-Px0" secondAttribute="trailing" constant="8" symbolic="YES" id="LjO-XI-SRy"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pw7-wS-2gV" secondAttribute="trailing" constant="59" id="LxM-Xf-ynT"/>
                             <constraint firstItem="c54-Ls-Px0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Mfu-L6-i2L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qQ0-cx-gyf" secondAttribute="trailing" constant="20" id="My1-y6-BdM"/>
                             <constraint firstItem="Szs-2G-dPg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="PR6-L8-uSW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Szs-2G-dPg" secondAttribute="trailing" constant="20" id="TFL-EV-JZf"/>
                             <constraint firstItem="ok7-CD-rIK" firstAttribute="top" secondItem="YOW-mp-S4o" secondAttribute="bottom" constant="3" id="TUK-zq-6bL"/>
@@ -146,8 +161,9 @@
                             <constraint firstItem="rDZ-io-cxC" firstAttribute="top" secondItem="mX3-fo-Bpg" secondAttribute="bottom" constant="3" id="hCw-Uu-Uct"/>
                             <constraint firstItem="zge-G3-Usc" firstAttribute="leading" secondItem="YOW-mp-S4o" secondAttribute="trailing" constant="8" symbolic="YES" id="jaM-OO-yf9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0PL-4A-PrM" secondAttribute="trailing" constant="20" id="lQC-cx-vtq"/>
+                            <constraint firstItem="pw7-wS-2gV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ndt-wF-lUV"/>
                             <constraint firstItem="YOW-mp-S4o" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="tAf-D3-dgB"/>
-                            <constraint firstItem="pw7-wS-2gV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="59" id="uhd-E7-Bf8"/>
+                            <constraint firstItem="qQ0-cx-gyf" firstAttribute="top" secondItem="2su-Nk-qpJ" secondAttribute="bottom" constant="17" id="y3c-Kh-u5f"/>
                         </constraints>
                     </view>
                     <connections>
@@ -158,6 +174,7 @@
                         <outlet property="mixView" destination="Szs-2G-dPg" id="iZS-ed-byI"/>
                         <outlet property="redSlider" destination="cNl-JU-UZU" id="b44-AJ-oVW"/>
                         <outlet property="redSliderValue" destination="zge-G3-Usc" id="td6-9H-RCQ"/>
+                        <outlet property="resetButton" destination="qQ0-cx-gyf" id="ZJt-MN-tPp"/>
                         <outlet property="transparencySlider" destination="pw7-wS-2gV" id="gcO-6B-cQS"/>
                     </connections>
                 </viewController>
@@ -167,10 +184,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="circle" catalog="system" width="128" height="121"/>
-        <image name="circle.fill" catalog="system" width="128" height="121"/>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="cube" catalog="system" width="128" height="124"/>
+        <image name="cube.fill" catalog="system" width="128" height="124"/>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
