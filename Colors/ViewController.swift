@@ -38,7 +38,6 @@ class ViewController: UIViewController {
         shadows()
 
     }
-    
 
     @IBAction func redSliderChangeValue(_ sender: Any) {
         redSliderValue.text = String(format: "%.2f", redSlider.value )
