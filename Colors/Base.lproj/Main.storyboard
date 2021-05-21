@@ -18,31 +18,43 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Szs-2G-dPg">
                                 <rect key="frame" x="20" y="64" width="374" height="269"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cNl-JU-UZU">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cNl-JU-UZU">
                                 <rect key="frame" x="164" y="367" width="232" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Trb-u8-Ymp"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="redSliderChangeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="bTd-7i-NHU"/>
+                                </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0PL-4A-PrM">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0PL-4A-PrM">
                                 <rect key="frame" x="164" y="404" width="232" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="EKg-7U-oB9"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="greenSliderChangeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="4bo-YH-Pvo"/>
+                                </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2su-Nk-qpJ">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2su-Nk-qpJ">
                                 <rect key="frame" x="164" y="441" width="232" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Fec-YJ-E3h"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="blueSliderChangeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="LHx-YG-96d"/>
+                                </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" minimumValueImage="circle" catalog="system" maximumValueImage="circle.fill" translatesAutoresizingMaskIntoConstraints="NO" id="pw7-wS-2gV">
                                 <rect key="frame" x="57" y="489" width="300" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="0Xi-1S-QaJ"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="transparencyChangeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="CfZ-0d-iRf"/>
+                                </connections>
                             </slider>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Red" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YOW-mp-S4o">
                                 <rect key="frame" x="30" y="364" width="60" height="34"/>
@@ -81,7 +93,7 @@
                                     <constraint firstAttribute="height" constant="34" id="i0P-CR-4CC"/>
                                     <constraint firstAttribute="width" constant="60" id="xod-2z-JF9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mX3-fo-Bpg">
@@ -91,7 +103,7 @@
                                     <constraint firstAttribute="height" constant="34" id="Kbf-VH-3xW"/>
                                     <constraint firstAttribute="width" constant="60" id="azv-4d-dgu"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rDZ-io-cxC">
@@ -101,7 +113,7 @@
                                     <constraint firstAttribute="width" constant="60" id="41F-kN-ba0"/>
                                     <constraint firstAttribute="height" constant="34" id="Dhl-Vs-fY9"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -140,9 +152,12 @@
                     </view>
                     <connections>
                         <outlet property="blueSlider" destination="2su-Nk-qpJ" id="Qj6-hp-vsu"/>
+                        <outlet property="blueSliderValue" destination="rDZ-io-cxC" id="ry2-YW-SLv"/>
                         <outlet property="greenSlider" destination="0PL-4A-PrM" id="8N1-EG-cW5"/>
+                        <outlet property="greenSliderValue" destination="mX3-fo-Bpg" id="vmY-Db-toJ"/>
                         <outlet property="mixView" destination="Szs-2G-dPg" id="iZS-ed-byI"/>
                         <outlet property="redSlider" destination="cNl-JU-UZU" id="b44-AJ-oVW"/>
+                        <outlet property="redSliderValue" destination="zge-G3-Usc" id="td6-9H-RCQ"/>
                         <outlet property="transparencySlider" destination="pw7-wS-2gV" id="gcO-6B-cQS"/>
                     </connections>
                 </viewController>
@@ -154,9 +169,6 @@
     <resources>
         <image name="circle" catalog="system" width="128" height="121"/>
         <image name="circle.fill" catalog="system" width="128" height="121"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
