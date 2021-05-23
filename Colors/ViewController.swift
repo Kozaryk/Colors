@@ -39,15 +39,9 @@ class ViewController: UIViewController {
 
     }
 
-    @IBAction func redSliderChangeValue(_ sender: Any) {
+    @IBAction func SlidersChangeValue(_ sender: Any) {
         redSliderValue.text = String(format: "%.2f", redSlider.value )
-        colorMixer()
-    }
-    @IBAction func greenSliderChangeValue(_ sender: Any) {
         greenSliderValue.text = String(format: "%.2f", greenSlider.value)
-        colorMixer()
-    }
-    @IBAction func blueSliderChangeValue(_ sender: Any) {
         blueSliderValue.text = String(format: "%.2f", blueSlider.value)
         colorMixer()
     }
@@ -61,7 +55,7 @@ class ViewController: UIViewController {
     }
     
     
-    func colorMixer() {
+    private func colorMixer() {
         self.mixView.backgroundColor = UIColor(
             red: CGFloat(redSlider.value),
             green: CGFloat(greenSlider.value),
@@ -69,7 +63,7 @@ class ViewController: UIViewController {
             alpha: CGFloat(transparencySlider.value))
     }
     
-    func shadows() {
+    private func shadows() {
         let array = [redSlider, greenSlider, blueSlider,
                      transparencySlider, redSliderValue,
                      greenSliderValue, blueSliderValue]
@@ -80,7 +74,7 @@ class ViewController: UIViewController {
         }
     }
     
-    func reset(){
+    private func reset(){
         redSlider.value = 0
         greenSlider.value = 0
         blueSlider.value = 0

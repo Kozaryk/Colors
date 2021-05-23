@@ -28,7 +28,7 @@
                                 </constraints>
                                 <color key="minimumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="redSliderChangeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="bTd-7i-NHU"/>
+                                    <action selector="SlidersChangeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="bTd-7i-NHU"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="0PL-4A-PrM">
@@ -38,7 +38,7 @@
                                 </constraints>
                                 <color key="minimumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="greenSliderChangeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="4bo-YH-Pvo"/>
+                                    <action selector="SlidersChangeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="7Re-QU-d74"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="2su-Nk-qpJ">
@@ -48,7 +48,7 @@
                                 </constraints>
                                 <color key="minimumTrackTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <action selector="blueSliderChangeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="LHx-YG-96d"/>
+                                    <action selector="SlidersChangeValue:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ogw-oV-eOi"/>
                                 </connections>
                             </slider>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" minimumValueImage="cube" catalog="system" maximumValueImage="cube.fill" translatesAutoresizingMaskIntoConstraints="NO" id="pw7-wS-2gV">
